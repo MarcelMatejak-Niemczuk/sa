@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="pole">
+    <input type="submit" value="Sprawdz" onclick="Sprawdz()">
+    <div id="wynik"></div>
+
+    <script>
+
+        function Sprawdz() {
+
+            let liczba = document.getElementById("pole").value;
+
+            if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+            else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+            else if (liczba=="") document.getElementById("wynik").innerHTML="podaj wartość"
+            else if (liczba==0) document.getElementById("wynik").innerHTML="zero";
+            else document.getElementById("wynik").innerHTML="to nie liczba";
+            /*document.write usuwa cała wartość strony
+            console.log się używa bardziej */
+            
+
+        }
+
+    </script>
+</body>
+</html>
+
+
+
